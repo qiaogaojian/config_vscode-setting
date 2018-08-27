@@ -127,5 +127,13 @@
         "key"    : "ctrl+shift+a",
         "command": "-xandeer.aligncode",
         "when"   : "editorTextFocus"
+    },
+    {
+        "key": "alt+p",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "-workbench.action.showCommands"
     }
 ]
