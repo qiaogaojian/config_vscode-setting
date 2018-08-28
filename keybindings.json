@@ -243,5 +243,13 @@
         "key": "ctrl+c",
         "command": "-search.action.copyMatch",
         "when": "fileMatchOrMatchFocus"
+    },
+    {
+        "key": "space f",
+        "command": "workbench.action.switchWindow"
+    },
+    {
+        "key": "space f",
+        "command": "workbench.action.quickOpenTerm"
     }
 ]
