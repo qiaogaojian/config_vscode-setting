@@ -120,6 +120,16 @@
             1
         ],
     },
+    //Color Regions
+    "coloredRegions.namedColors": {
+        "1": "rgba(138, 138, 133, 0.06)",
+        "2": "rgba(245, 222, 179, 0.06)",
+        "3": "rgba(160, 218, 45,  0.06)",
+        "4": "rgba(174, 129, 255, 0.06)",
+        "5": "rgba(45,  226, 166, 0.06)",
+        "6": "rgba(249, 38,  113, 0.06)",
+
+    },
     // LANGUAGE SETTING
     // C#
     "csharp.referencesCodeLens.enabled": false,
