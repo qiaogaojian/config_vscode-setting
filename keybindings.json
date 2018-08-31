@@ -146,5 +146,13 @@
         "command": "-cursorEnd",
         "when"   : "textInputFocus"
     },
+    {
+        "key": "alt+t",
+        "command": "workbench.action.gotoLine"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "-workbench.action.gotoLine"
+    },
 
 ]
