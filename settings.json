@@ -141,4 +141,6 @@
     // Typescript
     "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
     "typescript.format.placeOpenBraceOnNewLineForFunctions"    : true,
+    //java
+    "java.errors.incompleteClasspath.severity": "ignore",
 }
