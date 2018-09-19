@@ -143,4 +143,5 @@
     "typescript.format.placeOpenBraceOnNewLineForFunctions"    : true,
     //java
     "java.errors.incompleteClasspath.severity": "ignore",
+    "java.home"                               : "C:\\Program Files\\Java\\jdk1.8.0_131"
 }
