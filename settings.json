@@ -102,24 +102,6 @@
     "markdownlint.config"        : {
         "MD024": false,
     },
-    // Betteralign
-    "alignment.include": [
-        "json",
-        "js",
-        "cs",
-        "ts",
-        "vue",
-        "css",
-        "scss",
-        "shader",
-        "sql"
-    ],
-    "alignment.surroundSpace": {
-        "assignment": [
-            1,
-            1
-        ],
-    },
     //Color Regions
     "coloredRegions.namedColors": {
         "1": "rgba(36,  226, 166, 0.03)",
