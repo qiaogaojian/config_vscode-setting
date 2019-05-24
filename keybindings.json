@@ -144,5 +144,15 @@
         "key": "ctrl+g",
         "command": "-workbench.action.gotoLine"
     },
+    {
+        "key": "alt+oem_1",
+        "command": "cursorEnd",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "end",
+        "command": "-cursorEnd",
+        "when": "textInputFocus"
+    },
 
 ]
