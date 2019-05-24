@@ -110,9 +110,9 @@
 
   //Color Regions
   "coloredRegions.namedColors": {
-    "1": "rgba(36,  226, 166, 0.03)",
-    "2": "rgba(36, 86, 255, 0.03)",
-    "3": "rgba(186, 36,  66, 0.03)"
+    "m": "rgba(57, 43, 80, 0.5)",
+    "v": "rgba(32, 60, 44, 0.5)",
+    "c": "rgba(29, 54, 88, 0.5)",
   },
 
   // LANGUAGE SETTING
