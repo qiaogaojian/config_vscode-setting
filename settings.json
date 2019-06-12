@@ -2,7 +2,7 @@
   // EDITOR SETTING
 
   // Window
-  "window.zoomLevel": 0,
+"window.zoomLevel": 0,
 
   // Workbench
   "workbench.colorTheme": "Flatland Monokai",
@@ -41,7 +41,7 @@
   },
 
   // Terminal
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+//   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.fontWeightBold": "normal",
