@@ -108,9 +108,7 @@
 
   // Markdownlint
   "markdown.preview.fontFamily": "Consolas, Dengxian,Consolas, 'Courier New', monospace",
-  "markdownlint.config": {
-    "MD024": false
-  },
+  "pasteImage.showFilePathConfirmInputBox": true,
 
   //Color Regions
   "coloredRegions.namedColors": {
@@ -149,4 +147,11 @@
   "editor.fontSize": 14,//设置字体大小，这个不多说都明白
   "editor.fontWeight": "normal",
   "files.eol": "\n", //这个设置字体粗细，可选normal,bold,"100"~"900"等，选择合适的就行
+  "code-runner.executorMap": {
+    "c": "cd $dir && gcc -fexec-charset=utf-8 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "cpp": "cd $dir && g++ -fexec-charset=utf-8 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "java": "cd $dir && javac -encoding utf-8 $fileName && java $fileNameWithoutExt",
+    "python": "set PYTHONIOENCODING=utf8 && python $fileName"
+},
+"code-runner.runInTerminal": true,
 }
