@@ -148,8 +148,8 @@
   "editor.fontWeight": "normal",
   "files.eol": "\n", //这个设置字体粗细，可选normal,bold,"100"~"900"等，选择合适的就行
   "code-runner.executorMap": {
-    "c": "cd $dir && gcc -fexec-charset=utf-8 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "cpp": "cd $dir && g++ -fexec-charset=utf-8 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "c": "cd $dir && gcc -fexec-charset=GBK $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "cpp": "cd $dir && g++ -fexec-charset=GBK $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
     "java": "cd $dir && javac -encoding utf-8 $fileName && java $fileNameWithoutExt",
     "python": "set PYTHONIOENCODING=utf8 && python $fileName",
     "csharp": "cd $dir && C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe $fileName && $dir$fileNameWithoutExt",
