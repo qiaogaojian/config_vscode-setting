@@ -127,7 +127,10 @@
   "php.validate.executablePath": "D:\\xampp\\php\\php.exe",
 
   // Python
-  "python.pythonPath": "C:\\Users\\ETA\\AppData\\Local\\Programs\\Python\\Python36-32\\python.exe",
+  "python.pythonPath": "C:\\Users\\PC-QGJ\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
+  "python.linting.pylintArgs":[
+    "--disable=trailing-whitespace"
+  ],
 
   // Javascript
   "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
