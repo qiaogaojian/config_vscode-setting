@@ -129,7 +129,12 @@
   // Python
   "python.pythonPath": "C:\\Users\\PC-QGJ\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
   "python.linting.pylintArgs":[
-    "--disable=trailing-whitespace"
+    "--disable=invalid-name",
+    "--disable=broad-except",
+    "--disable=missing-docstring",
+    "--disable=bad-whitespace",
+    "--disable=unnecessary-semicolon",
+    "--disable=consider-using-enumerate",
   ],
 
   // Javascript
