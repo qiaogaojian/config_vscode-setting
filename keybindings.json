@@ -146,17 +146,12 @@
   },
   {
     "key": "alt+f",
-    "command": "wwm.aligncode",
-    "when": "editorTextFocus && !editorReadonly"
-},
-{
-    "key": "ctrl+alt+f",
     "command": "editor.action.formatDocument",
     "when": "editorTextFocus && !editorReadonly"
-},
-{
+  },
+  {
     "key": "shift+alt+f",
     "command": "-editor.action.formatDocument",
     "when": "editorTextFocus && !editorReadonly"
-}
+  }
 ]
