@@ -130,6 +130,7 @@
   "python.pythonPath": "C:\\Users\\PC-QGJ\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
   "python.linting.pylintArgs":[
     "--disable=invalid-name",
+    "--disable=line-too-long",
     "--disable=broad-except",
     "--disable=missing-docstring",
     "--disable=bad-whitespace",

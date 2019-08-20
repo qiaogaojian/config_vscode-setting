@@ -1,6 +1,6 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-{
+  {
     "key": "ctrl+alt+r",
     "command": "toggleFindRegex",
     "when": "editorFocus"
@@ -146,17 +146,12 @@
   },
   {
     "key": "alt+f",
-    "command": "wwm.aligncode",
-    "when": "editorTextFocus && !editorReadonly"
-},
-{
-    "key": "ctrl+alt+f",
     "command": "editor.action.formatDocument",
     "when": "editorTextFocus && !editorReadonly"
-},
-{
+  },
+  {
     "key": "shift+alt+f",
     "command": "-editor.action.formatDocument",
     "when": "editorTextFocus && !editorReadonly"
-}
+  }
 ]
