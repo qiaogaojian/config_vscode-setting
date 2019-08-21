@@ -2,7 +2,9 @@
   // EDITOR SETTING
 
   // Window
-"window.zoomLevel": 0,
+  "window.zoomLevel": 0,
+  "glassit.alpha": 230,
+  "glassit.step": 3,
 
   // Workbench
   "workbench.colorTheme": "Flatland Monokai",
