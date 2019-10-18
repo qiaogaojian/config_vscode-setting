@@ -124,6 +124,10 @@
   // C#
   "csharp.referencesCodeLens.enabled": false,
 
+  // Golang
+  "go.goroot": "C:\\Program Files\\Go",
+  "go.gopath": "C:\\Users\\PC-QGJ\\go",
+
   // PHP
   "phpfmt.php_bin": "D:\\xampp\\php\\php.exe",
   "php.validate.executablePath": "D:\\xampp\\php\\php.exe",
