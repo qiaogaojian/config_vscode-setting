@@ -3,7 +3,7 @@
 
   // Window
   "window.zoomLevel": 0,
-  "glassit.alpha": 230,
+  "glassit.alpha": 250,
   "glassit.step": 3,
 
   // Workbench
