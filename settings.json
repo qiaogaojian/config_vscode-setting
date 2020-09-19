@@ -21,7 +21,7 @@
   "editor.formatOnSave": false,
   "editor.minimap.renderCharacters": false,
   "editor.lineHeight": 20,
-  "editor.wordWrap": "on",
+  "editor.wordWrap": "off",
   "editor.tabSize": 4,
   "editor.detectIndentation": false,
   "editor.snippetSuggestions": "top",
