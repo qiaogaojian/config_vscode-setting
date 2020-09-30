@@ -1,3 +1,6 @@
-/workspaceStorage/
-sync.lock
-extensions/unity.unity-debug-1.3.0/bin/UnityDebug-log.txt
+/*
+*.*
+
+!keybindings.json
+!settings.json
+!*.md
