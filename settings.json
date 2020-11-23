@@ -6,7 +6,7 @@
     "glassit.step": 3,
     // Workbench
     "workbench.colorTheme": "Flatland Monokai",
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "vscode-icons",
     "workbench.sideBar.location": "right",
     "workbench.colorCustomizations": {
         "editor.foreground": "#F5DEB3",
@@ -54,11 +54,15 @@
     "search.exclude": {
         "**/node_modules": true,
         "**/bower_components": true,
-        "**/dist": true
+        "**/dist": true,
+        "build/": true,
+        "temp/": true,
+        "library/": true,
+        "**/*.anim": true
     },
     // Disable Autoupdate
     "update.enableWindowsBackgroundUpdates": false,
-    "update.channel": "none",
+    "update.mode": "none",
     "extensions.ignoreRecommendations": true,
     "extensions.autoUpdate": false,
     "extensions.autoCheckUpdates": false,
@@ -73,7 +77,11 @@
         "**/.svn": true,
         "**/.hg": true,
         "**/CVS": true,
-        "**/.DS_Store": true
+        "**/.DS_Store": true,
+        "**/*.meta": true,
+        "library/": true,
+        "local/": true,
+        "temp/": true
     },
     // EXTENSIONS SETTING
     // Fileheader
@@ -82,7 +90,6 @@
     "fileheader.tpl": "/*\r\n * @Author: {author} \r\n * @Date: {createTime} \r\n */\r\n",
     // Eslint
     "eslint.enable": true,
-    "eslint.autoFixOnSave": true,
     "eslint.run": "onType",
     "eslint.options": {
         "extensions": [
@@ -90,15 +97,6 @@
             ".vue"
         ]
     },
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        "vue",
-        {
-            "language": "vue",
-            "autoFix": true
-        }
-    ],
     // Vue
     // Markdownlint
     "markdown.preview.fontFamily": "Consolas, Dengxian,Consolas, 'Courier New', monospace",
@@ -123,6 +121,8 @@
     // PHP
     "phpfmt.php_bin": "D:\\xampp\\php\\php.exe",
     "php.validate.executablePath": "D:\\xampp\\php\\php.exe",
+    // Python
+    "python.pythonPath": "C:\\Users\\PC-QGJ\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
     "python.linting.pylintArgs": [
         "--disable=invalid-name",
         "--disable=line-too-long",
@@ -170,5 +170,5 @@
     "python.dataScience.alwaysTrustNotebooks": true,
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
-    }
+    },
 }
