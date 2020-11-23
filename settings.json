@@ -1,179 +1,174 @@
 {
-  // EDITOR SETTING
-
-  // Window
-  "window.zoomLevel": 0,
-  "glassit.alpha": 250,
-  "glassit.step": 3,
-
-  // Workbench
-  "workbench.colorTheme": "Flatland Monokai",
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.sideBar.location": "right",
-  "workbench.colorCustomizations": {
-    "editor.foreground": "#F5DEB3",
-    "peekViewEditor.background": "#252620"
-  },
-
-  // Editor
-  "editor.renderWhitespace": "all",
-  "editor.minimap.enabled": true,
-  "editor.formatOnSave": false,
-  "editor.minimap.renderCharacters": false,
-  "editor.lineHeight": 20,
-  "editor.wordWrap": "off",
-  "editor.tabSize": 4,
-  "editor.detectIndentation": false,
-  "editor.snippetSuggestions": "top",
-  "editor.quickSuggestions": {
-    "other": true,
-    "comments": true,
-    "strings": true
-  },
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": "variable",
-        "settings": {
-          "foreground": "#60D78B"
+    // EDITOR SETTING
+    // Window
+    "window.zoomLevel": 0,
+    "glassit.alpha": 250,
+    "glassit.step": 3,
+    // Workbench
+    "workbench.colorTheme": "Flatland Monokai",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.sideBar.location": "right",
+    "workbench.colorCustomizations": {
+        "editor.foreground": "#F5DEB3",
+        "peekViewEditor.background": "#252620"
+    },
+    // Editor
+    "editor.renderWhitespace": "all",
+    "editor.minimap.enabled": true,
+    "editor.formatOnSave": false,
+    "editor.minimap.renderCharacters": false,
+    "editor.lineHeight": 20,
+    "editor.wordWrap": "off",
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.snippetSuggestions": "top",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "variable",
+                "settings": {
+                    "foreground": "#60D78B"
+                }
+            }
+        ]
+    },
+    // Terminal
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.fontWeightBold": "normal",
+    "terminal.integrated.lineHeight": 1.2,
+    // Explorer
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    // Files
+    "files.trimTrailingWhitespace": true,
+    "files.encoding": "utf8",
+    "files.autoGuessEncoding": true,
+    // Search
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/dist": true
+    },
+    // Disable Autoupdate
+    "update.enableWindowsBackgroundUpdates": false,
+    "update.channel": "none",
+    "extensions.ignoreRecommendations": true,
+    "extensions.autoUpdate": false,
+    "extensions.autoCheckUpdates": false,
+    "extensions.showRecommendationsOnlyOnDemand": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    // Git
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true
+    },
+    // EXTENSIONS SETTING
+    // Fileheader
+    "fileheader.Author": "Michael",
+    "fileheader.LastModifiedBy": "Michael",
+    "fileheader.tpl": "/*\r\n * @Author: {author} \r\n * @Date: {createTime} \r\n */\r\n",
+    // Eslint
+    "eslint.enable": true,
+    "eslint.autoFixOnSave": true,
+    "eslint.run": "onType",
+    "eslint.options": {
+        "extensions": [
+            ".js",
+            ".vue"
+        ]
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue",
+        {
+            "language": "vue",
+            "autoFix": true
         }
-      }
-    ]
-  },
-
-  // Terminal
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.fontSize": 12,
-  "terminal.integrated.fontWeightBold": "normal",
-  "terminal.integrated.lineHeight": 1.2,
-
-  // Explorer
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
-
-  // Files
-  "files.trimTrailingWhitespace": true,
-  "files.encoding": "utf8",
-  "files.autoGuessEncoding": true,
-
-  // Search
-  "search.exclude": {
-    "**/node_modules": true,
-    "**/bower_components": true,
-    "**/dist": true
-  },
-
-  // Disable Autoupdate
-  "update.enableWindowsBackgroundUpdates": false,
-  "update.channel": "none",
-  "extensions.ignoreRecommendations": true,
-  "extensions.autoUpdate": false,
-  "extensions.autoCheckUpdates": false,
-  "extensions.showRecommendationsOnlyOnDemand": true,
-  "vsicons.dontShowNewVersionMessage": true,
-
-  // Git
-  "git.enableSmartCommit": true,
-  "git.autofetch": true,
-  "git.confirmSync": false,
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true
-  },
-
-  // EXTENSIONS SETTING
-
-  // Fileheader
-  "fileheader.Author": "Michael",
-  "fileheader.LastModifiedBy": "Michael",
-  "fileheader.tpl": "/*\r\n * @Author: {author} \r\n * @Date: {createTime} \r\n */\r\n",
-
-  // Eslint
-  "eslint.enable": true,
-  "eslint.autoFixOnSave": true,
-  "eslint.run": "onType",
-  "eslint.options": {
-    "extensions": [".js", ".vue"]
-  },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "vue",
-    { "language": "vue", "autoFix": true }
-  ],
-
-  // Vue
-
-  // Markdownlint
-  "markdown.preview.fontFamily": "Consolas, Dengxian,Consolas, 'Courier New', monospace",
-  "pasteImage.showFilePathConfirmInputBox": true,
-
-  //Color Regions
-  "coloredRegions.namedColors": {
-    "m": "rgba(57, 43, 80, 0.5)",
-    "v": "rgba(32, 60, 44, 0.5)",
-    "c": "rgba(29, 54, 88, 0.5)"
-  },
-
-  //Paste Image
-  "pasteImage.path": "${projectRoot}/source/images",
-  "pasteImage.basePath": "${projectRoot}/source",
-  "pasteImage.forceUnixStyleSeparator": true,
-  "pasteImage.prefix": "/",
-
-  // LANGUAGE SETTING
-
-  // C#
-  "csharp.referencesCodeLens.enabled": false,
-
-  // Golang
-  "go.goroot": "C:\\Program Files\\Go",
-  "go.gopath": "C:\\Users\\PC-QGJ\\go",
-
-  // PHP
-  "phpfmt.php_bin": "D:\\xampp\\php\\php.exe",
-  "php.validate.executablePath": "D:\\xampp\\php\\php.exe",
-
-  // Python
-  "python.pythonPath": "C:\\Users\\PC-QGJ\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
-  "python.linting.pylintArgs": [
-    "--disable=invalid-name",
-    "--disable=line-too-long",
-    "--disable=broad-except",
-    "--disable=missing-docstring",
-    "--disable=bad-whitespace",
-    "--disable=unnecessary-semicolon",
-    "--disable=consider-using-enumerate"
-  ],
-
-  // Javascript
-  "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
-  "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
-  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-
-  // Typescript
-  "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
-  "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
-
-  // leetcode
-  "leetcode.endpoint": "leetcode-cn",
-
-  // 字体
-  "editor.fontFamily": "Source Code Pro,Sarasa Mono SC, Consolas, 'Courier New', monospace", //后边的引号中写上要设置的字体类型，个人比较喜欢Fira Code
-  "editor.fontLigatures": true, //这个控制是否启用字体连字，true启用，false不启用，这里选择启用
-  "editor.fontSize": 14, //设置字体大小，这个不多说都明白
-  "editor.fontWeight": "normal",
-  "files.eol": "\n", //这个设置字体粗细，可选normal,bold,"100"~"900"等，选择合适的就行
-  "code-runner.executorMap": {
-    "c": "cd $dir && gcc -fexec-charset=GBK $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "cpp": "cd $dir && g++ -fexec-charset=GBK $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-    "java": "cd $dir && javac -encoding utf-8 $fileName && java $fileNameWithoutExt",
-    "python": "cd $dir && set PYTHONIOENCODING=utf8 && python $fileName",
-    "csharp": "cd $dir && C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe $fileName && $dir$fileNameWithoutExt"
-  },
-  "code-runner.runInTerminal": true
+    ],
+    // Vue
+    // Markdownlint
+    "markdown.preview.fontFamily": "Consolas, Dengxian,Consolas, 'Courier New', monospace",
+    "pasteImage.showFilePathConfirmInputBox": true,
+    //Color Regions
+    "coloredRegions.namedColors": {
+        "m": "rgba(57, 43, 80, 0.5)",
+        "v": "rgba(32, 60, 44, 0.5)",
+        "c": "rgba(29, 54, 88, 0.5)"
+    },
+    //Paste Image
+    "pasteImage.path": "${projectRoot}/source/images",
+    "pasteImage.basePath": "${projectRoot}/source",
+    "pasteImage.forceUnixStyleSeparator": true,
+    "pasteImage.prefix": "/",
+    // LANGUAGE SETTING
+    // C#
+    "csharp.referencesCodeLens.enabled": false,
+    // Golang
+    "go.goroot": "C:\\Program Files\\Go",
+    "go.gopath": "C:\\Users\\PC-QGJ\\go",
+    // PHP
+    "phpfmt.php_bin": "D:\\xampp\\php\\php.exe",
+    "php.validate.executablePath": "D:\\xampp\\php\\php.exe",
+    "python.linting.pylintArgs": [
+        "--disable=invalid-name",
+        "--disable=line-too-long",
+        "--disable=broad-except",
+        "--disable=missing-docstring",
+        "--disable=bad-whitespace",
+        "--disable=unnecessary-semicolon",
+        "--disable=consider-using-enumerate"
+    ],
+    "python.terminal.executeInFileDir": true,
+    "code-runner.fileDirectoryAsCwd": true,
+    // Javascript
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    // Typescript
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
+    // leetcode
+    "leetcode.endpoint": "leetcode-cn",
+    // 字体
+    "editor.fontFamily": "Source Code Pro,Sarasa Mono SC, Consolas, 'Courier New', monospace", //后边的引号中写上要设置的字体类型，个人比较喜欢Fira Code
+    "editor.fontLigatures": true, //这个控制是否启用字体连字，true启用，false不启用，这里选择启用
+    "editor.fontSize": 14, //设置字体大小，这个不多说都明白
+    "editor.fontWeight": "normal",
+    "files.eol": "\n", //这个设置字体粗细，可选normal,bold,"100"~"900"等，选择合适的就行
+    "code-runner.executorMap": {
+        "c": "cd $dir && gcc -fexec-charset=GBK $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ -fexec-charset=GBK $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "java": "cd $dir && javac -encoding utf-8 $fileName && java $fileNameWithoutExt",
+        // "python": "cd $dir && set PYTHONIOENCODING=utf8 && python $fileName",
+        "csharp": "cd $dir && C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe $fileName && $dir$fileNameWithoutExt"
+    },
+    "code-runner.runInTerminal": true,
+    "python.defaultInterpreterPath": "C:\\Users\\PC-QGJ\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "python.languageServer": "Pylance",
+    "python.dataScience.alwaysTrustNotebooks": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    }
 }
