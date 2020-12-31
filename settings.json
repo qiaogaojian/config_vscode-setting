@@ -184,5 +184,8 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+},
+"[glsl]": {
+    "editor.defaultFormatter": "circledev.glsl-canvas"
+}
 }
