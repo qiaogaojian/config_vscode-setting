@@ -1,6 +1,7 @@
 /*
 *.*
-
+!snippets/
+!snippets/glsl.json
 !keybindings.json
 !settings.json
 !*.md
