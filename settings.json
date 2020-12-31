@@ -145,8 +145,14 @@
   },
 
   // ## GLSL Linter
-  "glsllint.glslangValidatorPath": "D:/Opengl/glslang/bin/glslangValidator.exe",
   "glsl-linter.validatorPath": "D:/Opengl/glslang/bin/glslangValidator.exe",
+  "glsl-linter.fileExtensions": {
+    ".fs.glsl": "frag",
+    ".vs.glsl": "vert",
+    ".tes.glsl": "tese",
+    ".tcs.glsl": "tesc",
+    ".gs.glsl": "geom"
+  },
 
   // # 语言开发环境
 
@@ -184,8 +190,8 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-},
-"[glsl]": {
+  },
+  "[glsl]": {
     "editor.defaultFormatter": "circledev.glsl-canvas"
-}
+  }
 }
