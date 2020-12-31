@@ -144,8 +144,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
-  // ## GLSL Lint
+  // ## GLSL Linter
   "glsllint.glslangValidatorPath": "D:/Opengl/glslang/bin/glslangValidator.exe",
+  "glsl-linter.validatorPath": "D:/Opengl/glslang/bin/glslangValidator.exe",
 
   // # 语言开发环境
 
