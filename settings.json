@@ -193,5 +193,6 @@
   },
   "[glsl]": {
     "editor.defaultFormatter": "circledev.glsl-canvas"
-  }
+},
+"jupyter.alwaysTrustNotebooks": true
 }
