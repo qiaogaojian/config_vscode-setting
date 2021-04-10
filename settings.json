@@ -102,11 +102,6 @@
   // ## VSIcons
   "vsicons.dontShowNewVersionMessage": true,
 
-  // ## Fileheader
-  "fileheader.Author": "Michael",
-  "fileheader.LastModifiedBy": "Michael",
-  "fileheader.tpl": "/*\r\n * @Author: {author} \r\n * @Date: {createTime} \r\n */\r\n",
-
   // ## Markdownlint
   "markdown.preview.fontFamily": "Consolas, Dengxian,Consolas, 'Courier New', monospace",
   "pasteImage.showFilePathConfirmInputBox": true,
@@ -132,9 +127,6 @@
     // "python": "cd $dir && set PYTHONIOENCODING=utf8 && python $fileName",
   },
   "code-runner.runInTerminal": true,
-
-  // ## leetcode
-  "leetcode.endpoint": "leetcode-cn",
 
   // ## Prettier
   "[jsonc]": {
@@ -194,5 +186,9 @@
   "[glsl]": {
     "editor.defaultFormatter": "circledev.glsl-canvas"
 },
-"jupyter.alwaysTrustNotebooks": true
+"jupyter.alwaysTrustNotebooks": true,
+"[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"liveServer.settings.donotShowInfoMsg": true
 }
