@@ -13,7 +13,7 @@
 
   // ## Editor
   "editor.renderWhitespace": "all",
-  "editor.minimap.enabled": true,
+  "editor.minimap.enabled": false,
   "editor.formatOnSave": false,
   "editor.minimap.renderCharacters": false,
   "editor.lineHeight": 20,
