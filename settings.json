@@ -185,23 +185,29 @@
   },
   "[glsl]": {
     "editor.defaultFormatter": "circledev.glsl-canvas"
-},
-"jupyter.alwaysTrustNotebooks": true,
-"[html]": {
+  },
+  "jupyter.alwaysTrustNotebooks": true,
+  "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-"liveServer.settings.donotShowInfoMsg": true,
-"[javascript]": {
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-"[javascriptreact]": {
+  },
+  "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-"[json]": {
+  },
+  "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-"[typescriptreact]": {
+  },
+  "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-"javascript.updateImportsOnFileMove.enabled": "always"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ]
 }
