@@ -146,6 +146,9 @@
     ".gs.glsl": "geom"
   },
 
+  // ## Autoprefixer
+  "autoprefixer.formatOnSave": true,
+
   // # 语言开发环境
 
   // ## C#
