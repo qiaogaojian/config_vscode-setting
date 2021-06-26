@@ -210,9 +210,15 @@
 
   "javascript.updateImportsOnFileMove.enabled": "always",
   "eslint.validate": [
+    "vue",
+    "html",
+    "json",
     "javascript",
     "javascriptreact",
     "typescript",
     "typescriptreact"
-  ]
+  ],
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  }
 }
