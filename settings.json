@@ -226,8 +226,8 @@
     "i18n": "json",
     "preview-props": "json"
 },
-"[lua]": {
-    "editor.defaultFormatter": "trixnz.vscode-lua"
-},
 "security.workspace.trust.untrustedFiles": "open",
+"[lua]": {
+    "editor.defaultFormatter": "wellshsu.luaide-lite"
+},
 }
