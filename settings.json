@@ -49,7 +49,7 @@
   "explorer.confirmDragAndDrop": false,
 
   // ## Files
-  "files.trimTrailingWhitespace": true,
+  // "files.trimTrailingWhitespace": true,
   "files.encoding": "utf8",
   "files.autoGuessEncoding": true,
 
@@ -225,13 +225,12 @@
     "docs": "md",
     "i18n": "json",
     "preview-props": "json"
-},
-"workbench.startupEditor": "none",
-"security.workspace.trust.untrustedFiles": "open",
-"[lua]": {
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "[lua]": {
     "editor.defaultFormatter": "wellshsu.luaide-lite"
-},
-"[markdown]": {
+  },
+  "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-}
+  }
 }
