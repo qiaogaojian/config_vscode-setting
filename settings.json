@@ -225,5 +225,13 @@
     "docs": "md",
     "i18n": "json",
     "preview-props": "json"
-  }
+},
+"workbench.startupEditor": "none",
+"security.workspace.trust.untrustedFiles": "open",
+"[lua]": {
+    "editor.defaultFormatter": "wellshsu.luaide-lite"
+},
+"[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+}
 }
