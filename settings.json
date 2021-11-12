@@ -33,6 +33,24 @@
         "settings": {
           "foreground": "#60D78B"
         }
+      },
+      {
+        "scope": [
+          "comment",
+          "comment.block.documentation",
+          "comment.block.documentation.js",
+          "comment.line.double-slash.js",
+          "storage.type.class.jsdoc",
+          "entity.name.type.instance.jsdoc",
+          "variable.other.jsdoc",
+          "punctuation.definition.comment",
+          "punctuation.definition.comment.begin.documentation",
+          "punctuation.definition.comment.end.documentation"
+        ],
+        "settings": {
+          "fontStyle": "italic",
+          "foreground": "#555555"
+        }
       }
     ]
   },
@@ -52,6 +70,8 @@
   // "files.trimTrailingWhitespace": true,
   "files.encoding": "utf8",
   "files.autoGuessEncoding": true,
+  "C_Cpp.intelliSenseCachePath": "D:/Cache/vscode",
+  "C_Cpp.intelliSenseCacheSize":1024,
 
   // ## Search
   "search.exclude": {
@@ -114,10 +134,10 @@
   },
 
   // ## Paste Image
-  "pasteImage.path": "${projectRoot}/source/images",
-  "pasteImage.basePath": "${projectRoot}/source",
-  "pasteImage.forceUnixStyleSeparator": true,
-  "pasteImage.prefix": "/",
+  // "pasteImage.path": "${projectRoot}/source/images",
+  // "pasteImage.basePath": "${projectRoot}/source",
+  // "pasteImage.forceUnixStyleSeparator": true,
+  // "pasteImage.prefix": "/",
 
   // ## CodeRunner
   "code-runner.fileDirectoryAsCwd": true,
