@@ -1,6 +1,9 @@
 {
   // # VSCode设置
 
+  // ## 配置
+  "security.workspace.trust.enabled": false,
+
   // ## Workbench
   "glassit.alpha": 250,
   "workbench.colorTheme": "Flatland Monokai",
@@ -195,8 +198,8 @@
   "php.validate.executablePath": "D:\\xampp\\php\\php.exe",
 
   // ## Python
-  "python.pythonPath": "C:\\Program Files\\Python39\\python.exe",
-  "python.defaultInterpreterPath": "C:\\Program Files\\Python39\\python.exe",
+  "python.pythonPath": "C:\\Program Files\\Python\\python.exe",
+  "python.defaultInterpreterPath": "C:\\Program Files\\Python\\python.exe",
   "python.linting.pylintArgs": [
     "--disable=invalid-name",
     "--disable=line-too-long",
@@ -248,9 +251,9 @@
   },
   "security.workspace.trust.untrustedFiles": "open",
   "[lua]": {
-    "editor.defaultFormatter": "wellshsu.luaide-lite"
+    "editor.defaultFormatter": "trixnz.vscode-lua"
   },
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-  }
+}
 }
