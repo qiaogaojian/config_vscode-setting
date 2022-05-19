@@ -137,10 +137,10 @@
   },
 
   // ## Paste Image
-  // "pasteImage.path": "${projectRoot}/source/images",
-  // "pasteImage.basePath": "${projectRoot}/source",
-  // "pasteImage.forceUnixStyleSeparator": true,
-  // "pasteImage.prefix": "/",
+  "pasteImage.path": "${projectRoot}/source/images",
+  "pasteImage.basePath": "${projectRoot}/source",
+  "pasteImage.forceUnixStyleSeparator": true,
+  "pasteImage.prefix": "/",
 
   // ## CodeRunner
   "code-runner.fileDirectoryAsCwd": true,
