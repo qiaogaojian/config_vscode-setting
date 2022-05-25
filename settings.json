@@ -7,7 +7,7 @@
   // ## Workbench
   "glassit.alpha": 250,
   "workbench.colorTheme": "Flatland Monokai",
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "right",
   "workbench.colorCustomizations": {
     "editor.foreground": "#F5DEB3",
