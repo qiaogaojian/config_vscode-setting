@@ -7,7 +7,7 @@
   // ## Workbench
   "glassit.alpha": 250,
   "workbench.colorTheme": "Flatland Monokai",
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "right",
   "workbench.colorCustomizations": {
     "editor.foreground": "#F5DEB3",
@@ -198,8 +198,6 @@
   "php.validate.executablePath": "D:\\xampp\\php\\php.exe",
 
   // ## Python
-  "python.pythonPath": "C:\\Program Files\\Python\\python.exe",
-  "python.defaultInterpreterPath": "C:\\Program Files\\Python\\python.exe",
   "python.linting.pylintArgs": [
     "--disable=invalid-name",
     "--disable=line-too-long",
