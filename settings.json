@@ -1,5 +1,5 @@
 {
-  // # VSCode设置
+  // ********************************* VSCode设置 *********************************
 
   // ## 配置
   "security.workspace.trust.enabled": false,
@@ -59,7 +59,23 @@
   },
 
   // ## Terminal
-  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    }
+  },
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.fontWeightBold": "normal",
@@ -74,7 +90,7 @@
   "files.encoding": "utf8",
   "files.autoGuessEncoding": true,
   "C_Cpp.intelliSenseCachePath": "D:/Cache/vscode",
-  "C_Cpp.intelliSenseCacheSize":1024,
+  "C_Cpp.intelliSenseCacheSize": 1024,
 
   // ## Search
   "search.exclude": {
@@ -114,13 +130,12 @@
   "editor.fontWeight": "normal",
   "files.eol": "\n", //这个设置字体粗细，可选normal,bold,"100"~"900"等，选择合适的就行
 
-  // # 插件设置
+  // ********************************* 插件设置 *********************************
 
   // ## Extensions
   "extensions.ignoreRecommendations": true,
   "extensions.autoUpdate": false,
   "extensions.autoCheckUpdates": false,
-  "extensions.showRecommendationsOnlyOnDemand": true,
 
   // ## VSIcons
   "vsicons.dontShowNewVersionMessage": true,
@@ -146,8 +161,8 @@
   "code-runner.fileDirectoryAsCwd": true,
   "code-runner.executorMap": {
     "csharp": "cd $dir && C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe $fileName && $dir$fileNameWithoutExt",
-    "java": "cd $dir && javac -encoding utf-8 $fileName && java $fileNameWithoutExt"
-    // "python": "cd $dir && set PYTHONIOENCODING=utf8 && python $fileName",
+    "java": "cd $dir && javac -encoding utf-8 $fileName && java $fileNameWithoutExt",
+    "python": "cd $dir && set PYTHONIOENCODING=utf8 && python $fileName"
   },
   "code-runner.runInTerminal": true,
 
@@ -185,10 +200,7 @@
     ".gs.glsl": "geom"
   },
 
-  // ## Autoprefixer
-  "autoprefixer.formatOnSave": true,
-
-  // # 语言开发环境
+  // ********************************* 开发环境 *********************************
 
   // ## C#
   "csharp.referencesCodeLens.enabled": false,
@@ -255,9 +267,9 @@
   },
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-},
-"hardhat.telemetry": false,
-"[solidity]": {
+  },
+  "hardhat.telemetry": false,
+  "[solidity]": {
     "editor.defaultFormatter": "JuanBlanco.solidity"
-}
+  }
 }
