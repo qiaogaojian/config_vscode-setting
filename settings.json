@@ -146,8 +146,8 @@
   "code-runner.fileDirectoryAsCwd": true,
   "code-runner.executorMap": {
     "csharp": "cd $dir && C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe $fileName && $dir$fileNameWithoutExt",
-    "java": "cd $dir && javac -encoding utf-8 $fileName && java $fileNameWithoutExt"
-    // "python": "cd $dir && set PYTHONIOENCODING=utf8 && python $fileName",
+    "java": "cd $dir && javac -encoding utf-8 $fileName && java $fileNameWithoutExt",
+    "python": "cd $dir && python3 $fileName",
   },
   "code-runner.runInTerminal": true,
 
@@ -198,6 +198,7 @@
   "php.validate.executablePath": "D:\\xampp\\php\\php.exe",
 
   // ## Python
+  "python.defaultInterpreterPath": "/bin/python3",
   "python.linting.pylintArgs": [
     "--disable=invalid-name",
     "--disable=line-too-long",
@@ -253,5 +254,6 @@
   },
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-}
+},
+"workbench.startupEditor": "none"
 }
