@@ -271,5 +271,6 @@
   "hardhat.telemetry": false,
   "[solidity]": {
     "editor.defaultFormatter": "JuanBlanco.solidity"
-  }
+},
+"redhat.telemetry.enabled": true
 }
