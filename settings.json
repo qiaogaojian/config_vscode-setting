@@ -180,7 +180,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -272,5 +272,8 @@
   "[solidity]": {
     "editor.defaultFormatter": "JuanBlanco.solidity"
 },
-"redhat.telemetry.enabled": true
+"redhat.telemetry.enabled": true,
+"remote.SSH.remotePlatform": {
+    "172.16.17.220": "linux"
+}
 }
