@@ -275,5 +275,8 @@
 "redhat.telemetry.enabled": true,
 "remote.SSH.remotePlatform": {
     "172.16.17.220": "linux"
+},
+"[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
 }
 }
