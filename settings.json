@@ -235,6 +235,7 @@
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.codeActionsOnSave": {
+
     "source.fixAll.eslint": true
   },
   "[glsl]": {
@@ -282,5 +283,6 @@
 "vim.vimrc.enable": true,
 "vim.autoSwitchInputMethod.defaultIM": "vim.autoSwitchInputMethod.enable",
 "vim.autoSwitchInputMethod.enable": true,
-"vim.easymotion": true
+"vim.easymotion": true,
+"vim.useSystemClipboard": true
 }
