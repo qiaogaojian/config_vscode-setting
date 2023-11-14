@@ -24,7 +24,7 @@
   "editor.tabSize": 4,
   "editor.detectIndentation": false,
   "editor.snippetSuggestions": "top",
-  "editor.quickSuggestions": {
+  "edityyor.quickSuggestions": {
     "other": true,
     "comments": true,
     "strings": true
