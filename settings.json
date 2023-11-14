@@ -235,7 +235,6 @@
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.codeActionsOnSave": {
-
     "source.fixAll.eslint": true
   },
   "[glsl]": {
@@ -272,17 +271,25 @@
   "hardhat.telemetry": false,
   "[solidity]": {
     "editor.defaultFormatter": "JuanBlanco.solidity"
-},
-"redhat.telemetry.enabled": true,
-"remote.SSH.remotePlatform": {
+  },
+  "redhat.telemetry.enabled": true,
+  "remote.SSH.remotePlatform": {
     "172.16.17.220": "linux"
-},
-"[css]": {
+  },
+  "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
-},
-"vim.vimrc.enable": true,
-"vim.autoSwitchInputMethod.defaultIM": "vim.autoSwitchInputMethod.enable",
-"vim.autoSwitchInputMethod.enable": true,
-"vim.easymotion": true,
-"vim.useSystemClipboard": true
+  },
+  // --------------------------------- vim
+  "vim.vimrc.enable": true,
+  "vim.vimrc.path": "D:\\Program\\Vim\\.vimrc",
+  "vim.incsearch": true,
+  "vim.foldfix": true,
+  "vim.hlsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "rgba(50, 135, 127, 0.8)",
+  "vim.highlightedyank.duration": 1000,
+  "vim.easymotion": true,
+  "vim.sneak": true,
+  "vim.sneakUseIgnorecaseAndSmartcase": true,
 }
