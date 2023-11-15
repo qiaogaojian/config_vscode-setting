@@ -281,7 +281,6 @@
   },
   // --------------------------------- vim
   "vim.vimrc.enable": true,
-  "vim.vimrc.path": "D:\\Program\\Vim\\.vimrc",
   "vim.incsearch": true,
   "vim.foldfix": true,
   "vim.hlsearch": true,
