@@ -168,5 +168,14 @@
         "key": "ctrl+shift+down",
         "command": "editor.action.moveLinesDownAction",
         "when": "editorTextFocus"
-    }
+    },
+    {
+        "key": "shift shift",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "search.action.focusSearchList"
+    },
+
 ]
