@@ -235,8 +235,8 @@
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
+    "source.fixAll.eslint": "explicit"
+},
   "[glsl]": {
     "editor.defaultFormatter": "circledev.glsl-canvas"
   },
