@@ -6,13 +6,13 @@
 
   // ## Workbench
   "glassit.alpha": 250,
-  "workbench.colorTheme": "Flatland Monokai",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.sideBar.location": "right",
+  "workbench.colorTheme": "Monokai",
+  "workbench.iconTheme": "vscode-icons",
   "workbench.colorCustomizations": {
     "editor.foreground": "#F5DEB3",
     "peekViewEditor.background": "#252620"
   },
+  "explorer.autoReveal": false,
 
   // ## Editor
   "editor.renderWhitespace": "all",
@@ -57,6 +57,7 @@
       }
     ]
   },
+  "workbench.editor.focusRecentEditorAfterClose": false,
 
   // ## Terminal
   "terminal.integrated.profiles.windows": {
@@ -89,8 +90,9 @@
   // "files.trimTrailingWhitespace": true,
   "files.encoding": "utf8",
   "files.autoGuessEncoding": true,
-  "C_Cpp.intelliSenseCachePath": "D:/Cache/vscode",
-  "C_Cpp.intelliSenseCacheSize": 1024,
+"files.autoSave": "afterDelay",
+"C_Cpp.intelliSenseCachePath": "D:/Cache/vscode",
+"C_Cpp.intelliSenseCacheSize": 1024,
 
   // ## Search
   "search.exclude": {
@@ -168,7 +170,7 @@
 
   // ## Formatter
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -206,11 +208,8 @@
   "csharp.referencesCodeLens.enabled": false,
 
   // ## PHP
-  "phpfmt.php_bin": "D:\\xampp\\php\\php.exe",
-  "php.validate.executablePath": "D:\\xampp\\php\\php.exe",
-
-  // ## Python
-  "python.defaultInterpreterPath": "C:\\Program Files\\Python\\python.exe",
+"phpfmt.php_bin": "D:\\xampp\\php\\php.exe",
+"php.validate.executablePath": "D:\\xampp\\php\\php.exe",
   "python.linting.pylintArgs": [
     "--disable=invalid-name",
     "--disable=line-too-long",
@@ -219,10 +218,12 @@
     "--disable=bad-whitespace",
     "--disable=unnecessary-semicolon",
     "--disable=consider-using-enumerate"
-  ],
-  "python.terminal.executeInFileDir": true,
+],
   "python.languageServer": "Pylance",
+  "python.terminal.executeInFileDir": false,
+  "python.terminal.activateEnvironment": false,
   "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--line-length", "999"],
 
   // ## Javascript
   "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
@@ -236,7 +237,7 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
-},
+  },
   "[glsl]": {
     "editor.defaultFormatter": "circledev.glsl-canvas"
   },
@@ -274,19 +275,77 @@
   },
   "redhat.telemetry.enabled": true,
   "remote.SSH.remotePlatform": {
-    "172.16.17.220": "linux"
-  },
+    "172.16.17.220": "linux",
+    "192.168.1.177": "linux",
+    "192.168.1.163": "linux"
+},
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
   },
   // --------------------------------- vim
+  "window.titleBarStyle": "custom",
+  "window.customMenuBarAltFocus": false,
+  "window.enableMenuBarMnemonics": false,
   "vim.vimrc.enable": true,
   "vim.incsearch": true,
   "vim.foldfix": true,
   "vim.hlsearch": true,
   "vim.useSystemClipboard": true,
+  "vim.mouseSelectionGoesIntoVisualMode": false,
   "vim.highlightedyank.enable": true,
   "vim.highlightedyank.color": "rgba(50, 135, 127, 0.9)",
   "vim.highlightedyank.duration": 1000,
   "vim.easymotion": true,
+  // inoremap
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-s>"],
+      "after": ["<Esc>"],
+      "commands": [":w"]
+    },
+    {
+      "before": ["<C-f>"],
+      "commands": ["actions.find"]
+    }
+  ],
+  // nnoremap
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-s>"],
+      "commands": [":w"]
+    },
+    {
+      "before": ["g", "e"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<C-f>"],
+      "commands": ["actions.find"]
+    }
+  ],
+  // vnoremap
+  "vim.operatorPendingModeKeyBindings": [
+    {
+      "before": ["<C-s>"],
+      "commands": [":w"]
+    }
+  ],
+  // 由vim接管ctrl+any的按键，而不是vscode
+  "vim.useCtrlKeys": true,
+  "vim.handleKeys": {
+    "<C-s>": true,
+    "<C-y>": false,
+  },
+
+  // --------------------------------- macros
+  "macros.list": {
+    "foldLevel2": ["editor.unfoldAll", "editor.foldLevel2"],
+    "foldLevel3": ["editor.unfoldAll", "editor.foldLevel3"],
+    "foldLevel4": ["editor.unfoldAll", "editor.foldLevel4"],
+    "foldLevel5": ["editor.unfoldAll", "editor.foldLevel5"]
+},
+"cmake.showOptionsMovedNotification": false,
+"markdown-preview-enhanced.previewTheme": "github-light.css",
+"remote.autoForwardPortsSource": "hybrid",
+"cmake.configureOnOpen": true
 }
