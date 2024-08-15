@@ -20,7 +20,7 @@
   "editor.formatOnSave": false,
   "editor.minimap.renderCharacters": false,
   "editor.lineHeight": 20,
-  "editor.wordWrap": "on",
+  "editor.wordWrap": "off",
   "editor.tabSize": 4,
   "editor.detectIndentation": false,
   "editor.snippetSuggestions": "top",
@@ -235,9 +235,9 @@
   "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
-  },
+//   "editor.codeActionsOnSave": {
+//     "source.fixAll.eslint": "explicit"
+//   },
   "[glsl]": {
     "editor.defaultFormatter": "circledev.glsl-canvas"
   },
