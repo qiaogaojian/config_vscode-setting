@@ -200,12 +200,7 @@
     ".tes.glsl": "tese",
     ".tcs.glsl": "tesc",
     ".gs.glsl": "geom"
-  },
-
-  // ********************************* 开发环境 *********************************
-
-  // ## C#
-  "csharp.referencesCodeLens.enabled": false,
+},
 
   // ## PHP
 "phpfmt.php_bin": "D:\\xampp\\php\\php.exe",
@@ -347,5 +342,6 @@
 "cmake.showOptionsMovedNotification": false,
 "markdown-preview-enhanced.previewTheme": "github-light.css",
 "remote.autoForwardPortsSource": "hybrid",
-"cmake.configureOnOpen": true
+"cmake.configureOnOpen": true,
+"dotnet.codeLens.enableReferencesCodeLens": false
 }
