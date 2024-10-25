@@ -1,9 +1,8 @@
 {
   // ********************************* VSCode设置 *********************************
 
-  // ## 配置
+  // ********************************* 基础配置
   "security.workspace.trust.enabled": false,
-
   // ## Workbench
   "glassit.alpha": 250,
   "workbench.colorTheme": "Monokai",
@@ -13,7 +12,6 @@
     "peekViewEditor.background": "#252620"
   },
   "explorer.autoReveal": false,
-
   // ## Editor
   "editor.renderWhitespace": "all",
   "editor.minimap.enabled": false,
@@ -58,7 +56,6 @@
     ]
   },
   "workbench.editor.focusRecentEditorAfterClose": false,
-
   // ## Terminal
   "terminal.integrated.profiles.windows": {
     "PowerShell": {
@@ -81,19 +78,14 @@
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.lineHeight": 1.2,
-
   // ## Explorer
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-
   // ## Files
   // "files.trimTrailingWhitespace": true,
   "files.encoding": "utf8",
   "files.autoGuessEncoding": true,
-"files.autoSave": "afterDelay",
-"C_Cpp.intelliSenseCachePath": "D:/Cache/vscode",
-"C_Cpp.intelliSenseCacheSize": 1024,
-
+  "files.autoSave": "afterDelay",
   // ## Search
   "search.exclude": {
     "**/node_modules": true,
@@ -104,11 +96,9 @@
     "library/": true,
     "**/*.anim": true
   },
-
   // ## Disable Autoupdate
   "update.enableWindowsBackgroundUpdates": false,
   "update.mode": "none",
-
   // ## Git
   "git.enableSmartCommit": true,
   "git.autofetch": true,
@@ -124,7 +114,6 @@
     "local/": true,
     "temp/": true
   },
-
   // 字体
   "editor.fontFamily": "Source Code Pro,Sarasa Mono SC, Consolas, 'Courier New', monospace", //后边的引号中写上要设置的字体类型，个人比较喜欢Fira Code
   "editor.fontLigatures": true, //这个控制是否启用字体连字，true启用，false不启用，这里选择启用
@@ -170,7 +159,7 @@
 
   // ## Formatter
   "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -187,7 +176,6 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
@@ -200,11 +188,19 @@
     ".tes.glsl": "tese",
     ".tcs.glsl": "tesc",
     ".gs.glsl": "geom"
-},
+  },
 
   // ## PHP
-"phpfmt.php_bin": "D:\\xampp\\php\\php.exe",
-"php.validate.executablePath": "D:\\xampp\\php\\php.exe",
+  "phpfmt.php_bin": "D:\\xampp\\php\\php.exe",
+  "php.validate.executablePath": "D:\\xampp\\php\\php.exe",
+  "C_Cpp.intelliSenseCachePath": "D:/Cache/vscode",
+  "C_Cpp.intelliSenseCacheSize": 1024,
+  "dotnet.codeLens.enableReferencesCodeLens": false,
+  "dotnetAcquisitionExtension.sharedExistingDotnetPath": "C:/Program Files/dotnet/dotnet.exe",
+  //   "python.defaultInterpreterPath": "${workspaceFolder}/venv/bin/python",
+  "python.defaultInterpreterPath": "${workspaceFolder}/venv/python.exe",
+
+  // ## Python
   "python.linting.pylintArgs": [
     "--disable=invalid-name",
     "--disable=line-too-long",
@@ -213,7 +209,7 @@
     "--disable=bad-whitespace",
     "--disable=unnecessary-semicolon",
     "--disable=consider-using-enumerate"
-],
+  ],
   "python.languageServer": "Pylance",
   "python.terminal.executeInFileDir": false,
   "python.terminal.activateEnvironment": false,
@@ -230,15 +226,16 @@
   "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-//   "editor.codeActionsOnSave": {
-//     "source.fixAll.eslint": "explicit"
-//   },
+  //   "editor.codeActionsOnSave": {
+  //     "source.fixAll.eslint": "explicit"
+  //   },
+
   "[glsl]": {
     "editor.defaultFormatter": "circledev.glsl-canvas"
   },
+
   "jupyter.alwaysTrustNotebooks": true,
   "liveServer.settings.donotShowInfoMsg": true,
-
   "javascript.updateImportsOnFileMove.enabled": "always",
   "eslint.validate": [
     "vue",
@@ -249,6 +246,7 @@
     "typescript",
     "typescriptreact"
   ],
+
   "[vue]": {
     "editor.defaultFormatter": "octref.vetur"
   },
@@ -258,25 +256,31 @@
     "preview-props": "json"
   },
   "security.workspace.trust.untrustedFiles": "open",
+
   "[lua]": {
     "editor.defaultFormatter": "trixnz.vscode-lua"
   },
+
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
+
   "hardhat.telemetry": false,
   "[solidity]": {
     "editor.defaultFormatter": "JuanBlanco.solidity"
   },
+
   "redhat.telemetry.enabled": true,
   "remote.SSH.remotePlatform": {
     "172.16.17.220": "linux",
     "192.168.1.177": "linux",
     "192.168.1.163": "linux"
-},
+  },
+
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
   },
+
   // --------------------------------- vim
   "window.titleBarStyle": "custom",
   "window.customMenuBarAltFocus": false,
@@ -286,11 +290,12 @@
   "vim.foldfix": true,
   "vim.hlsearch": true,
   "vim.useSystemClipboard": true,
-  "vim.mouseSelectionGoesIntoVisualMode": false,
+  "vim.mouseSelectionGoesIntoVisualMode": true,
   "vim.highlightedyank.enable": true,
   "vim.highlightedyank.color": "rgba(50, 135, 127, 0.9)",
   "vim.highlightedyank.duration": 1000,
   "vim.easymotion": true,
+
   // inoremap
   "vim.insertModeKeyBindingsNonRecursive": [
     {
@@ -303,6 +308,7 @@
       "commands": ["actions.find"]
     }
   ],
+
   // nnoremap
   "vim.normalModeKeyBindingsNonRecursive": [
     {
@@ -318,6 +324,7 @@
       "commands": ["actions.find"]
     }
   ],
+
   // vnoremap
   "vim.operatorPendingModeKeyBindings": [
     {
@@ -325,11 +332,12 @@
       "commands": [":w"]
     }
   ],
+
   // 由vim接管ctrl+any的按键，而不是vscode
   "vim.useCtrlKeys": true,
   "vim.handleKeys": {
     "<C-s>": true,
-    "<C-y>": false,
+    "<C-y>": false
   },
 
   // --------------------------------- macros
@@ -338,10 +346,17 @@
     "foldLevel3": ["editor.unfoldAll", "editor.foldLevel3"],
     "foldLevel4": ["editor.unfoldAll", "editor.foldLevel4"],
     "foldLevel5": ["editor.unfoldAll", "editor.foldLevel5"]
+  },
+  "cmake.showOptionsMovedNotification": false,
+  "markdown-preview-enhanced.previewTheme": "github-light.css",
+  "remote.autoForwardPortsSource": "hybrid",
+  "cmake.configureOnOpen": false,
+  "platformSettings.autoLoad": true,
+  "platformSettings.platforms": {
+    "win32": {},
+    "linux": {}
 },
-"cmake.showOptionsMovedNotification": false,
-"markdown-preview-enhanced.previewTheme": "github-light.css",
-"remote.autoForwardPortsSource": "hybrid",
-"cmake.configureOnOpen": true,
-"dotnet.codeLens.enableReferencesCodeLens": false
+"yaml.schemas": {
+    "file:///c%3A/Users/Administrator/.vscode/extensions/docsmsft.docs-yaml-1.0.5/dist/toc.schema.json": "/toc\\.yml/i"
+}
 }
