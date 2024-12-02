@@ -1,32 +1,35 @@
 {
   // ********************************* VSCode设置 *********************************
 
-  // ********************************* 基础配置
-  "security.workspace.trust.enabled": false,
-  // ## Workbench
-  "glassit.alpha": 250,
-  "workbench.colorTheme": "Monokai",
-  "workbench.iconTheme": "vscode-icons",
+  // Workbench
+  "workbench.colorTheme": "Flatland Monokai",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.editor.focusRecentEditorAfterClose": false,
   "workbench.colorCustomizations": {
     "editor.foreground": "#F5DEB3",
+    "editor.background": "#333333",
     "peekViewEditor.background": "#252620"
   },
-  "explorer.autoReveal": false,
-  // ## Editor
+
+  // Window
+  "window.titleBarStyle": "custom",
+  "window.customMenuBarAltFocus": false,
+  "window.enableMenuBarMnemonics": false,
+
+  // Editor
   "editor.renderWhitespace": "all",
-  "editor.minimap.enabled": false,
+  "editor.minimap.enabled": true,
   "editor.formatOnSave": false,
-  "editor.minimap.renderCharacters": false,
+  "editor.minimap.renderCharacters": true,
   "editor.lineHeight": 20,
   "editor.wordWrap": "off",
   "editor.tabSize": 4,
+  "editor.fontSize": 14, //设置字体大小，这个不多说都明白
+  "editor.fontWeight": "normal",
+  "editor.fontLigatures": true, //这个控制是否启用字体连字，true启用，false不启用，这里选择启用
+  "editor.fontFamily": "Source Code Pro,Sarasa Mono SC, Consolas, 'Courier New', monospace", //后边的引号中写上要设置的字体类型，个人比较喜欢Fira Code
   "editor.detectIndentation": false,
   "editor.snippetSuggestions": "top",
-  "edityyor.quickSuggestions": {
-    "other": true,
-    "comments": true,
-    "strings": true
-  },
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
@@ -55,8 +58,8 @@
       }
     ]
   },
-  "workbench.editor.focusRecentEditorAfterClose": false,
-  // ## Terminal
+
+  // Terminal
   "terminal.integrated.profiles.windows": {
     "PowerShell": {
       "source": "PowerShell",
@@ -78,15 +81,20 @@
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.lineHeight": 1.2,
-  // ## Explorer
+
+  // Explorer
+  "explorer.autoReveal": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  // ## Files
-  // "files.trimTrailingWhitespace": true,
+
+  //  Files
+  "files.eol": "\n",
   "files.encoding": "utf8",
   "files.autoGuessEncoding": true,
   "files.autoSave": "afterDelay",
-  // ## Search
+  "files.trimTrailingWhitespace": false,
+
+  // Search
   "search.exclude": {
     "**/node_modules": true,
     "**/bower_components": true,
@@ -96,10 +104,15 @@
     "library/": true,
     "**/*.anim": true
   },
-  // ## Disable Autoupdate
+
+  // Disable Autoupdate
   "update.enableWindowsBackgroundUpdates": false,
   "update.mode": "none",
-  // ## Git
+  "extensions.ignoreRecommendations": true,
+  "extensions.autoUpdate": false,
+  "extensions.autoCheckUpdates": false,
+
+  // Git
   "git.enableSmartCommit": true,
   "git.autofetch": true,
   "git.confirmSync": false,
@@ -114,41 +127,20 @@
     "local/": true,
     "temp/": true
   },
-  // 字体
-  "editor.fontFamily": "Source Code Pro,Sarasa Mono SC, Consolas, 'Courier New', monospace", //后边的引号中写上要设置的字体类型，个人比较喜欢Fira Code
-  "editor.fontLigatures": true, //这个控制是否启用字体连字，true启用，false不启用，这里选择启用
-  "editor.fontSize": 14, //设置字体大小，这个不多说都明白
-  "editor.fontWeight": "normal",
-  "files.eol": "\n", //这个设置字体粗细，可选normal,bold,"100"~"900"等，选择合适的就行
+
+  // Security
+  "security.workspace.trust.enabled": false,
+  "security.workspace.trust.untrustedFiles": "open",
 
   // ********************************* 插件设置 *********************************
 
-  // ## Extensions
-  "extensions.ignoreRecommendations": true,
-  "extensions.autoUpdate": false,
-  "extensions.autoCheckUpdates": false,
-
-  // ## VSIcons
-  "vsicons.dontShowNewVersionMessage": true,
-
-  // ## Markdownlint
-  "markdown.preview.fontFamily": "Consolas, Dengxian,Consolas, 'Courier New', monospace",
-  "pasteImage.showFilePathConfirmInputBox": true,
-
-  // ## Color Regions
-  "coloredRegions.namedColors": {
-    "m": "rgba(57, 43, 80, 0.5)",
-    "v": "rgba(32, 60, 44, 0.5)",
-    "c": "rgba(29, 54, 88, 0.5)"
-  },
-
-  // ## Paste Image
+  // --------------------------------- Paste Image
   "pasteImage.path": "${projectRoot}/source/images",
   "pasteImage.basePath": "${projectRoot}/source",
   "pasteImage.forceUnixStyleSeparator": true,
   "pasteImage.prefix": "/",
 
-  // ## CodeRunner
+  // --------------------------------- CodeRunner
   "code-runner.fileDirectoryAsCwd": true,
   "code-runner.executorMap": {
     "csharp": "cd $dir && C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe $fileName && $dir$fileNameWithoutExt",
@@ -157,7 +149,7 @@
   },
   "code-runner.runInTerminal": true,
 
-  // ## Formatter
+  // --------------------------------- Prettier - Code formatter
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -165,126 +157,50 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
-  // ## GLSL Linter
-  "glsl-linter.validatorPath": "D:/Opengl/glslang/bin/glslangValidator.exe",
-  "glsl-linter.fileExtensions": {
-    ".fs.glsl": "frag",
-    ".vs.glsl": "vert",
-    ".tes.glsl": "tese",
-    ".tcs.glsl": "tesc",
-    ".gs.glsl": "geom"
-  },
-
-  // ## PHP
-  "phpfmt.php_bin": "D:\\xampp\\php\\php.exe",
-  "php.validate.executablePath": "D:\\xampp\\php\\php.exe",
-  "C_Cpp.intelliSenseCachePath": "D:/Cache/vscode",
-  "C_Cpp.intelliSenseCacheSize": 1024,
-  "dotnet.codeLens.enableReferencesCodeLens": false,
-  "dotnetAcquisitionExtension.sharedExistingDotnetPath": "C:/Program Files/dotnet/dotnet.exe",
-  //   "python.defaultInterpreterPath": "${workspaceFolder}/venv/bin/python",
-  "python.defaultInterpreterPath": "${workspaceFolder}/venv/python.exe",
-
-  // ## Python
-  "python.linting.pylintArgs": [
-    "--disable=invalid-name",
-    "--disable=line-too-long",
-    "--disable=broad-except",
-    "--disable=missing-docstring",
-    "--disable=bad-whitespace",
-    "--disable=unnecessary-semicolon",
-    "--disable=consider-using-enumerate"
-  ],
-  "python.languageServer": "Pylance",
-  "python.terminal.executeInFileDir": false,
-  "python.terminal.activateEnvironment": false,
-  "python.formatting.provider": "black",
-  "python.formatting.blackArgs": ["--line-length", "999"],
-
-  // ## Javascript
-  "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
-  "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
-  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-
-  // ##Typescript
-  "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
-  "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  //   "editor.codeActionsOnSave": {
-  //     "source.fixAll.eslint": "explicit"
-  //   },
-
-  "[glsl]": {
-    "editor.defaultFormatter": "circledev.glsl-canvas"
-  },
-
-  "jupyter.alwaysTrustNotebooks": true,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "eslint.validate": [
-    "vue",
-    "html",
-    "json",
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-
   "[vue]": {
-    "editor.defaultFormatter": "octref.vetur"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "vetur.grammar.customBlocks": {
-    "docs": "md",
-    "i18n": "json",
-    "preview-props": "json"
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "security.workspace.trust.untrustedFiles": "open",
-
-  "[lua]": {
-    "editor.defaultFormatter": "trixnz.vscode-lua"
+  "[glsl]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
-  "[markdown]": {
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-  },
+  // --------------------------------- LiveServer
+  "liveServer.settings.donotShowInfoMsg": true,
 
-  "hardhat.telemetry": false,
-  "[solidity]": {
-    "editor.defaultFormatter": "JuanBlanco.solidity"
-  },
-
-  "redhat.telemetry.enabled": true,
+  // --------------------------------- remote ssh
   "remote.SSH.remotePlatform": {
     "172.16.17.220": "linux",
     "192.168.1.177": "linux",
-    "192.168.1.163": "linux"
-  },
-
-  "[css]": {
-    "editor.defaultFormatter": "vscode.css-language-features"
+    "192.168.1.163": "linux",
+    "192.168.1.73": "linux",
+    "192.168.1.180": "linux",
+    "192.168.1.78": "linux"
+},
+  "remote.autoForwardPortsSource": "hybrid",
+  "platformSettings.autoLoad": true,
+  "platformSettings.platforms": {
+    "win32": {},
+    "linux": {}
   },
 
   // --------------------------------- vim
-  "window.titleBarStyle": "custom",
-  "window.customMenuBarAltFocus": false,
-  "window.enableMenuBarMnemonics": false,
   "vim.vimrc.enable": true,
   "vim.incsearch": true,
   "vim.foldfix": true,
@@ -347,16 +263,94 @@
     "foldLevel4": ["editor.unfoldAll", "editor.foldLevel4"],
     "foldLevel5": ["editor.unfoldAll", "editor.foldLevel5"]
   },
+
+  // --------------------------------- cmake
   "cmake.showOptionsMovedNotification": false,
-  "markdown-preview-enhanced.previewTheme": "github-light.css",
-  "remote.autoForwardPortsSource": "hybrid",
   "cmake.configureOnOpen": false,
-  "platformSettings.autoLoad": true,
-  "platformSettings.platforms": {
-    "win32": {},
-    "linux": {}
+
+  // --------------------------------- marscode
+  "marscode.chatLanguage": "cn",
+  "marscode.enableCodelens": {
+        "enableInlineDocumentation": false,
+        "enableInlineUnitTest": false,
+        "enableInlineExplain": false
   },
-  "yaml.schemas": {
-    "file:///c%3A/Users/Administrator/.vscode/extensions/docsmsft.docs-yaml-1.0.5/dist/toc.schema.json": "/toc\\.yml/i"
-  }
+
+  // --------------------------------- glassit
+  "glassit.alpha": 255,
+
+  // --------------------------------- markdown preview enhanced
+  "markdown-preview-enhanced.previewTheme": "github-light.css",
+  "markdown.preview.fontFamily": "Consolas, Dengxian,Consolas, 'Courier New', monospace",
+
+  // ********************************* 编程语言 *********************************
+  // CPP
+  "C_Cpp.intelliSenseCachePath": "D:/Cache/vscode",
+  "C_Cpp.intelliSenseCacheSize": 1024,
+
+  // C#
+  "dotnet.codeLens.enableReferencesCodeLens": false,
+  "dotnetAcquisitionExtension.sharedExistingDotnetPath": "C:/Program Files/dotnet/dotnet.exe",
+
+  // Python
+  "python.defaultInterpreterPath": "${workspaceFolder}/venv/python.exe",
+  "python.linting.pylintArgs": [
+    "--disable=invalid-name",
+    "--disable=line-too-long",
+    "--disable=broad-except",
+    "--disable=missing-docstring",
+    "--disable=bad-whitespace",
+    "--disable=unnecessary-semicolon",
+    "--disable=consider-using-enumerate"
+  ],
+  "python.languageServer": "Pylance",
+  "python.terminal.executeInFileDir": false,
+  "python.terminal.activateEnvironment": false,
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--line-length", "999"],
+
+  // Javascript
+  "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+  "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "eslint.validate": [
+    "vue",
+    "html",
+    "json",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  // Vue
+  "vetur.grammar.customBlocks": {
+    "docs": "md",
+    "i18n": "json",
+    "preview-props": "json"
+  },
+
+  // Typescript
+  "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+  "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+  // GLSL Linter
+  "glsl-linter.validatorPath": "D:/Opengl/glslang/bin/glslangValidator.exe",
+  "glsl-linter.fileExtensions": {
+    ".fs.glsl": "frag",
+    ".vs.glsl": "vert",
+    ".tes.glsl": "tese",
+    ".tcs.glsl": "tesc",
+    ".gs.glsl": "geom"
+  },
+
+  // PHP
+  "phpfmt.php_bin": "D:\\xampp\\php\\php.exe",
+"php.validate.executablePath": "D:\\xampp\\php\\php.exe",
+"[cpp]": {
+    "editor.defaultFormatter": "ms-iot.vscode-ros"
+}
 }
