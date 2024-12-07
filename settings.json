@@ -4,7 +4,10 @@
   // Workbench
   "workbench.colorTheme": "Flatland Monokai",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.editor.focusRecentEditorAfterClose": false,
+  "workbench.editor.focusRecentEditorAfterClose": false, 
+  "workbench.editorAssociations": {   
+    "*.md": "vscode.markdown.preview.editor",
+  },
   "workbench.colorCustomizations": {
     "editor.foreground": "#F5DEB3",
     "editor.background": "#333333",
